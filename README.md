@@ -1,5 +1,5 @@
 # wall-scrawler
-An AI art generator that reads hand-written text in any language
+An AI art generator that reads hand-written text in any language. (Languages are currently disabled.)
 
 ### Installation
 You need to install Tesseract-OCR from https://github.com/tesseract-ocr/tesseract.
