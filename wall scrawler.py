@@ -69,15 +69,10 @@ class WebCam:
 		return img, stripSpaces(sentence)
 
 	def onlyCaps(self, text):
-		hasLetters = False
-		for letter in text:
-			if letter.islower():
+		for char in text:
+			if char not in " ABCDEFGHIJKLMNOPQRSTUVWXYZ":
 				return False
-			if letter.isupper():
-				hasLetters = True
-			if not letter.isupper() and letter != ' ':
-				return False
-		return hasLetters
+		return True
 
 if __name__ == '__main__':
 	webCam = WebCam()
